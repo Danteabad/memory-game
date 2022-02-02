@@ -7,11 +7,26 @@
   <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
+  
 
   <h3>Score:<span id="result"></span></h3>
 
-  <div class="grid">
+  <div class="grid" ONMOUSEOVER="colorscore()" ONMOUSEOUT="colorscore2()">
   </div>
+
+  <SCRIPT LANGUAGE="JavaScript">
+    function colorscore ()
+    {
+      result.style.color = "blue";
+    }
+    
+    function colorscore2 ()
+    {
+      result.style.color = "green";
+    }
+
+    </SCRIPT>
+
 
 </body>
 </html>
